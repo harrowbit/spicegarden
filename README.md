@@ -2,7 +2,7 @@
 
 A responsive, multi-page website concept for Spice Garden, an authentic Sri Lankan restaurant located in Negombo. This project showcases modern web design principles, including mobile-first responsiveness and clean CSS architecture.
 
-## Disclaimer and Project Purpose
+##⚠️ Disclaimer and Project Purpose
 
 This is a sample project created for portfolio and educational purposes only. 
 
