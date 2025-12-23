@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Spice Garden Restaurant - Get in touch, visit us, or share your feedback">
+    <meta name="keywords" content="contact restaurant, Negombo restaurant contact, feedback, testimonials">
+    <meta name="author" content="Spice Garden Restaurant">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; img-src 'self' data: https:">
+    <title>Contact Us - Spice Garden Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Spice Garden</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p class="tagline">We Would Love to Hear From You</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Phone Number</h3>
+                        <p>+94 31 222 3456</p>
+                        <p>+94 77 123 4567</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Email Address</h3>
+                        <p>info@spicegarden.lk</p>
+                        <p>reservations@spicegarden.lk</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Our Address</h3>
+                        <p>123 Beach Road</p>
+                        <p>Negombo, Western Province</p>
+                        <p>Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The most authentic Sri Lankan food I have tasted outside of a home kitchen. The rice and curry is exceptional, and the staff are incredibly welcoming."</p>
+                        <p class="testimonial-author">- Priya Fernando</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Spice Garden is our go-to place for family dinners. The kottu is amazing and the portions are generous. Highly recommend the lamprais!"</p>
+                        <p class="testimonial-author">- Rohan Silva</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"As a tourist visiting Negombo, this restaurant was a highlight of my trip. The food is delicious and the atmosphere is warm and inviting."</p>
+                        <p class="testimonial-author">- Sarah Mitchell</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <div class="container">
+                <h2>Share Your Feedback</h2>
+                <p class="form-intro">We value your opinion and would love to hear about your experience at Spice Garden.</p>
+                
+                <form class="feedback-form" id="feedbackForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age">Age <span class="required">*</span></label>
+                            <input type="number" id="age" name="age" min="1" max="120" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender <span class="required">*</span></label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactNumber">Contact Number <span class="required">*</span></label>
+                            <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9+\-\s]+" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Contact Method <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactMethod" value="email"> Email
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactMethod" value="phone"> Phone
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactMethod" value="sms"> SMS
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactMethod" value="whatsapp"> WhatsApp
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">Your Feedback <span class="required">*</span></label>
+                        <textarea id="feedback" name="feedback" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="reset" class="btn-reset">Reset</button>
+                        <button type="submit" class="btn-submit">Submit Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spice Garden Restaurant. All rights reserved.</p>
+            <p>Negombo, Western Province, Sri Lanka</p>
+        </div>
+    </footer>
+
+    <style>
+        .contact-info-section {
+            background-color: var(--white);
+            padding: 4rem 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-card {
+            background-color: var(--background-light);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+            text-align: center;
+        }
+        
+        .contact-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .contact-card p {
+            color: var(--text-dark);
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+        
+        .testimonials-section {
+            background-color: var(--background-light);
+            padding: 4rem 0;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            text-align: left;
+            font-size: 1rem;
+        }
+        
+        .testimonial-author {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-align: right;
+            font-size: 0.95rem;
+        }
+        
+        .feedback-section {
+            background-color: var(--white);
+            padding: 4rem 0;
+        }
+        
+        .form-intro {
+            margin-bottom: 2rem;
+        }
+        
+        .feedback-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--background-light);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .required {
+            color: #D32F2F;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #D0D0D0;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            cursor: pointer;
+        }
+        
+        .form-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+            margin-top: 2rem;
+        }
+        
+        .btn-reset,
+        .btn-submit {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-reset {
+            background-color: #E0E0E0;
+            color: var(--text-dark);
+        }
+        
+        .btn-reset:hover {
+            background-color: #D0D0D0;
+        }
+        
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .btn-submit:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .feedback-form {
+                padding: 1.5rem;
+            }
+            
+            .form-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-reset,
+            .btn-submit {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const checkboxes = document.querySelectorAll('input[name="contactMethod"]:checked');
+            if (checkboxes.length === 0) {
+                alert('Please select at least one preferred contact method.');
+                return;
+            }
+            
+            alert('Thank you for your feedback! We appreciate your time and will review your comments carefully.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
